@@ -115,7 +115,8 @@ function [x, y] = SidesSection(obj, action, x, y)
       NumeditParam(obj, 'ntrials', 100, x, y, ...
                    'position', [5 pos(4)-100 40 40], 'labelpos', 'top', ...
                    'TooltipString', 'How many trials to show in plot');
-      set_callback(ntrials, {mfilename, 'update_plot'});      
+      set_callback(ntrials, {mfilename, 'update_plot'});
+      size(mfilename)
       xlabel('trial number');
       SoloParamHandle(obj, 'previous_plot', 'saveable', 0);
       
@@ -359,6 +360,9 @@ function [x, y] = SidesSection(obj, action, x, y)
 
       % BLUE for upcoming/current
       ps = value(previous_sides);
+      %"LINE returns a column vector of handles to LINE objects, 
+      %one handle per line. LINEs are children of AXES objects."
+   
       if ps(end)=='l', 
          hb = line(length(previous_sides), 2, 'Parent', value(myaxes));
       else                         

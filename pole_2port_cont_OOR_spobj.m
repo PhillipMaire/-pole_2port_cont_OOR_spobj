@@ -100,7 +100,7 @@ SoloFunctionAddVars('RewardsSection', 'rw_args', 'hit_history');
 SoloFunctionAddVars('MotorsSection', 'rw_args', 'pole_position_history');
 SoloFunctionAddVars('MotorsSection', 'rw_args', 'lickport_position_history');
 
-% Sides section gets left ort prob
+% Sides section gets left port prob
 SoloFunctionAddVars('MotorsSection', 'rw_args', 'left_port_prob_history');
 % ----------
 
