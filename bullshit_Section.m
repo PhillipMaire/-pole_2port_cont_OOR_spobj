@@ -5,7 +5,7 @@
    switch action
     case 'init',
       SoloParamHandle(obj, 'pstruct');
-     
+      SoloParamHandle(obj, 'LastTrialEvents', 'value', []);
       
     case 'trial_finished',
       % Make sure we've collected up to the latest events from the RT machine:  
