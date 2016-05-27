@@ -1,5 +1,5 @@
 % [x, y] = SidesSection(obj, action, x, y)
-%testing git with numbers 3
+%testing git branching 
 % Section that takes care of choosing the next correct side and keeping
 % track of a plot of sides and hit/miss history.
 %
